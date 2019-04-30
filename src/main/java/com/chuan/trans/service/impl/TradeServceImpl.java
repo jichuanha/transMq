@@ -15,7 +15,7 @@ public class TradeServceImpl implements TradeService {
 
 
     @Override
-    @TransMessage
+    @TransMessage(topic = "", tags = "")
     public String getOrder() throws Exception {
         return null;
     }
