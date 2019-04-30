@@ -28,9 +28,9 @@ public class TranMessageGeneral implements ProducerClient {
         // 您在控制台创建的 Group ID 注意：事务消息的 Group ID 不能与其他类型消息的 Group ID 共用
         properties.put(PropertyKeyConst.GROUP_ID, groupId);
         // 阿里云身份验证，在阿里云服务器管理控制台创建
-        properties.put(PropertyKeyConst.AccessKey, "LTAI3ZGESKTFsdVW");
+        properties.put(PropertyKeyConst.AccessKey, "");
         // 阿里云身份验证，在阿里云服务器管理控制台创建
-        properties.put(PropertyKeyConst.SecretKey, "x7JykSfC7uAajQHcEp8t1Np6NbHyjA");
+        properties.put(PropertyKeyConst.SecretKey, "");
         // 设置 TCP 接入域名，进入控制台的实例管理页面的“获取接入点信息”区域查看
         properties.put(PropertyKeyConst.NAMESRV_ADDR, add);
         // 配置检查本地事务的方法
