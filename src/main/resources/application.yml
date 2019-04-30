@@ -1,0 +1,18 @@
+spring:
+
+  resources:
+
+    static-locations:
+      - classpath:/static/
+  #    thymeleaf动态模板属性
+
+
+  redis:
+        host: 10.1.35.10
+        port: 6379
+
+
+
+#mybatisPlus
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
