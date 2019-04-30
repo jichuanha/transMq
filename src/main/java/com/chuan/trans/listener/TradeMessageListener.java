@@ -24,7 +24,7 @@ public class TradeMessageListener implements MessageListener {
     public Action consume(Message msg, ConsumeContext context) {
         log.info("receive a message, msgId: {}, key: {},tag:{}", msg.getMsgID(), msg.getKey(), msg.getTag());
 
-        if ("leafActOrderPaySuccessNotify".equals(msg.getTag())) {
+        if ("leafActOrder".equals(msg.getTag())) {
             try {
                 String msgStr = new String(msg.getBody(), Charset.forName("UTF-8"));
                 //JSONObject jsonObject = JSONObject.parseObject(msgStr);
