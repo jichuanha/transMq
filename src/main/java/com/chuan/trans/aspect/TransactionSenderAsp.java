@@ -41,7 +41,6 @@ public class TransactionSenderAsp {
     @Around("annotationSender() && @annotation(rd)")
     public void sendMessage(final ProceedingJoinPoint joinPoint, TransMessage rd) {
 
-        //Message msg = new Message("online-leaf_trade_msg", "leafActOrderPaySuccessNotify", activity.toString().getBytes());
         String topic = rd.topic();
         String tags = rd.tags();
         log.info("topic :{} , tags :{}",topic, tags);
